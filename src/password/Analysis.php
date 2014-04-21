@@ -5,6 +5,9 @@ namespace password;
 require_once("src/password/Password.php");
 
 
+//To make AnalysisTest::testCountOthers work...
+//NOTE!!! Sideeffects are not nice...
+//TODO: actually not sure on how to handle this...
 mb_internal_encoding('UTF-8');
 mb_http_output('UTF-8');
 
