@@ -15,5 +15,6 @@ Maybe to be used in 1dv408.
 
 #Sideeffect 
 Please note that the Analysis does this
+
 	mb_internal_encoding('UTF-8');
 	mb_http_output('UTF-8');
