@@ -4,6 +4,9 @@ namespace password;
 
 class Password {
 
+	/**
+	* @param string $stringPassword
+	*/
 	public function __construct($stringPassword) {
 		if (is_string($stringPassword) === FALSE) {
 			throw new \InvalidArgumentException("Password must be of string type");

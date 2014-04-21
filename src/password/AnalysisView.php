@@ -4,10 +4,18 @@ namespace password;
 
 class AnalysisView {
 
+	/**
+	* @var Analysis $analysis
+	*/
+	private $analysis;
+
 	public function __construct(Analysis $analysis) {
 		$this->analysis = $analysis;
 	}
 
+	/**
+	* @return string HTML
+	*/
 	public function show() {
 
 		$pw = $this->analysis->getPassword();

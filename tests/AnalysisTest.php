@@ -43,19 +43,13 @@ class AnalysisTest extends PHPUnit_Framework_TestCase {
 		$this->assertEquals(1 , $this->emptyAnalysis->countOthers());
 	}
 
-
-
 	public function testCountUnique() {
-
-		$pw = new Password("aaaaaaaaaaaa");
-		$a = new Analysis($pw);
-
-		$this->assertEquals(1 , $a->countUnique());
-
-
 		$this->assertEquals(12 , $this->analysis->countUnique());
 		$this->assertEquals(1 , $this->emptyAnalysis->countUnique());
 
+		$pw = new Password("aaaaaaaaaaaa");
+		$a = new Analysis($pw);
+		$this->assertEquals(1 , $a->countUnique());
 
 		$pw = new Password("åäö");
 		$a = new Analysis($pw);

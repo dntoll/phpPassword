@@ -15,6 +15,11 @@ mb_http_output('UTF-8');
 */
 class Analysis {
 
+	/**
+	* @var Password $analysed
+	*/
+	private $analysed;
+
 	public function __construct(Password $password) {
 		$this->analysed = $password;
 	}
