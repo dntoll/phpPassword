@@ -1,4 +1,4 @@
-php_password
+phpPassword
 ============
 
 A password analyser library for PHP, this is really intended as a simple example of PHP-code.
