@@ -23,7 +23,7 @@ class AnalysisView {
 		$lower = $this->analysis->countLowerCase();
 		$upper = $this->analysis->countUpperCase();
 		$numbers = $this->analysis->countNumbers();
-		$others = $this->analysis->countOthers();
+		$symbols = $this->analysis->countSymbols();
 		$unique = $this->analysis->countUnique();
 		$classes = $this->analysis->countClasses();
 
@@ -36,7 +36,7 @@ class AnalysisView {
 				<li>Number of lower case $lower</li>
 				<li>Number of upper case $upper</li>
 				<li>Number of numbers $numbers</li>
-				<li>Number of symbols $others</li>
+				<li>Number of symbols $symbols</li>
 				<li>Number of unique characters $unique</li>
 				<li>Number of number of classes $classes</li>
 			</ul>

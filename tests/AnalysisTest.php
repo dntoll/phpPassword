@@ -38,9 +38,9 @@ class AnalysisTest extends PHPUnit_Framework_TestCase {
 		$this->assertEquals(0 , $this->emptyAnalysis->countNumbers());
 	}
 
-	public function testCountOthers() {
-		$this->assertEquals(3 , $this->analysis->countOthers());
-		$this->assertEquals(1 , $this->emptyAnalysis->countOthers());
+	public function testCountsymbols() {
+		$this->assertEquals(3 , $this->analysis->countSymbols());
+		$this->assertEquals(1 , $this->emptyAnalysis->countSymbols());
 	}
 
 	public function testCountUnique() {

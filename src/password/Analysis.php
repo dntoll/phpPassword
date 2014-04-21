@@ -49,8 +49,10 @@ class Analysis {
 		return count($matches[0]);
 	}
 
-	public function countOthers() {
-		return $this->analysed->countLetters() - $this->countNumbers() - $this->countUpperCase() - $this->countLowerCase();
+	public function countSymbols() {
+		return $this->analysed->countLetters() - $this->countNumbers() 
+											   - $this->countUpperCase() 
+											   - $this->countLowerCase();
 	}
 
 	public function countUnique() {
@@ -59,6 +61,7 @@ class Analysis {
 		
 		foreach ($lowerCaseArray as $key => $letter) {
 			if ($letter == "") {
+				//sideeffect from preg_split
 			} else if (isset($unique[$letter]) === false) {
 				$unique[$letter] = 1;
 			} else {
@@ -80,7 +83,7 @@ class Analysis {
 		if ($this->countLowerCase() > 0) {
 			$ret++;
 		}
-		if ($this->countOthers() > 0) {
+		if ($this->countSymbols() > 0) {
 			$ret++;
 		}
 		return $ret;
